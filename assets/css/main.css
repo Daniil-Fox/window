@@ -6,16 +6,17 @@
 }
 .wind__image {
   width: 100%;
-  max-width: 1018px;
+  max-width: 470px;
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
   margin-bottom: 123px;
-  height: 470px;
   background-color: #ccc;
 }
 .wind__image img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .form {
@@ -73,7 +74,7 @@
 @media (max-width: 868px) {
   .wind__image {
     margin-bottom: 50px;
-    height: 320px;
+    max-width: 320px;
   }
   .form__label {
     flex-basis: 100%;
@@ -94,9 +95,8 @@
 
 @media (max-width: 568px) {
   .wind__image {
-    height: 178px;
+    max-width: 250px;
     width: 100%;
-    padding: 0 40px;
     background: none;
   }
   .form {
